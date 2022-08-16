@@ -18,8 +18,7 @@
 body {
     background-color: var(--Light-Grayish-Blue);
     display: flex;
-    flex-direction: column;
-    /* position: relative; */
+    flex-direction: column; 
     justify-content: center;
     align-items: center;
     height: 100vh;
