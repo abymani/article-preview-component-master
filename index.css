@@ -95,8 +95,9 @@ figcaption .date {
     border-radius: 50%;
 }
 
-.share-icon:hover{
+.share-icon:hover,:active{
     cursor: pointer;
+    color:white;
     background-color: var(--Very-Dark-Grayish-Blue);
     
 }
@@ -107,6 +108,24 @@ figcaption .date {
 /* .share-icon svg path{
     fill: white;
 } */
+.share-button{
+    background-color: var(--Light-Grayish-Blue);
+    padding: 6px;
+    border-radius: 20px;
+    font-size: 20px;
+    color: var(--Very-Dark-Grayish-Blue);
+    transition: all 0.25s ease;
+    border-style: none;
+    width: 40px;
+    height: 40px;
+}
+.share-button:hover,:active {
+    cursor: pointer;
+    background-color: var(--Very-Dark-Grayish-Blue);
+    color: var(--Light-Grayish-Blue);
+    /* filter: invert(1); */
+}
+
 .share-container {
     
     position: absolute;
@@ -132,6 +151,10 @@ figcaption .date {
     color: var(--Grayish-Blue);
 }
 
+.share-container.active {
+    --scale: 1;
+    visibility: visible;
+}
 .hide {
     display:none;
 }
